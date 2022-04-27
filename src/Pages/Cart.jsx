@@ -2,6 +2,10 @@ import React from 'react'
 import Header from '../components/Header/Header'
 import Footer from '../components/Footer/Footer'
 import ItemList from '../components/ItemList/ItemList'
+import aramax_img from '../../imgs/aramax.png'
+import fedex_img from '../../imgs/fedex.png'
+import DPD_img from '../../imgs/DPD.png'
+import item_img from '../../imgs/itemPic.png';
 
 function Cart() {
   return (
@@ -14,10 +18,10 @@ function Cart() {
             <div className="flex cart_cont" style={{marginTop:"3vh",justifyContent:"space-between",gap:"30px"}}>
 
                 <div className="right" style={{backgroundColor:"#F2F1F1",flex:1,borderRadius:"15px",padding:"5%",height:"70vh",overflowY:"auto"}}>
-                    <ItemList title={"اسم المنتج"} isdeleted={true} category={"ملابس النساء - تيشيرت"} pic={"../imgs/itemPic.png"} price={"10"} />
-                    <ItemList title={"اسم المنتج"} isdeleted={true} category={"ملابس النساء - تيشيرت"} pic={"../imgs/itemPic.png"} price={"10"} />
-                    <ItemList title={"اسم المنتج"} isdeleted={true} category={"ملابس النساء - تيشيرت"} pic={"../imgs/itemPic.png"} price={"10"} />
-                    <ItemList title={"اسم المنتج"} isdeleted={true} category={"ملابس النساء - تيشيرت"} pic={"../imgs/itemPic.png"} price={"10"} />
+                    <ItemList title={"اسم المنتج"} isdeleted={true} category={"ملابس النساء - تيشيرت"} pic={item_img} price={"10"} />
+                    <ItemList title={"اسم المنتج"} isdeleted={true} category={"ملابس النساء - تيشيرت"} pic={item_img} price={"10"} />
+                    <ItemList title={"اسم المنتج"} isdeleted={true} category={"ملابس النساء - تيشيرت"} pic={item_img} price={"10"} />
+                    <ItemList title={"اسم المنتج"} isdeleted={true} category={"ملابس النساء - تيشيرت"} pic={item_img} price={"10"} />
                 </div>
 
 
@@ -72,7 +76,7 @@ function Cart() {
             <div className="flex shop_cart_cont" >
                 
                 <div className="shop_cart flex" style={{alignItems:"center",gap:"20px",boxShadow:"black 1.95px 1.95px 2.6px;"}}>
-                    <div><img src="../imgs/fedex.png" width={120} height={70} alt="FedEx logo" /></div>
+                    <div><img src={fedex_img} width={120} height={70} alt="FedEx logo" /></div>
                     <div>
                         <div>رسوم التوصيل</div>
                         <div style={{color:"#FFA84D"}}>3 د.ا</div>
@@ -80,7 +84,7 @@ function Cart() {
                 </div>
                 
                 <div className="shop_cart flex" style={{alignItems:"center",gap:"20px",boxShadow:"black 1.95px 1.95px 2.6px;"}}>
-                    <div><img src="../imgs/aramax.png" width={120} height={120} alt="FedEx logo" /></div>
+                    <div><img src={aramax_img} width={120} height={120} alt="FedEx logo" /></div>
                     <div>
                         <div>رسوم التوصيل</div>
                         <div style={{color:"#FFA84D"}}>3 د.ا</div>
@@ -88,7 +92,7 @@ function Cart() {
                 </div>
                 
                 <div className="shop_cart flex" style={{alignItems:"center",gap:"20px",boxShadow:"black 1.95px 1.95px 2.6px;"}}>
-                    <div><img src="../imgs/DPD.png" width={130} height={70} alt="FedEx logo" /></div>
+                    <div><img src={DPD_img} width={130} height={70} alt="FedEx logo" /></div>
                     <div>
                         <div>رسوم التوصيل</div>
                         <div style={{color:"#FFA84D"}}>3 د.ا</div>

@@ -11,12 +11,12 @@ function Header() {
     const [ismenu, setismenu] = useState(false);
     const [issidebar, setissidebar] = useState(false)
 
-    const OpenMenu = () =>{
+    const OpenMenu = (num) =>{
         if(ismenu === false){
-            document.getElementById("header_menu").style.display = "flex"
+            document.getElementById("header_menu"+num).style.display = "flex"
             setismenu(true);
         }else if(ismenu === true){
-            document.getElementById("header_menu").style.display = "none"
+            document.getElementById("header_menu"+num).style.display = "none"
             setismenu(false);
         }
     }
@@ -59,11 +59,11 @@ function Header() {
         <div className="right_menu_cont" id='right_menu' onClick={(e)=>{e.currentTarget === e.target ? OpenSidebar():null}}>
             <div className="right_menu" >
             <div className='active'>الرئيسية</div>
-            <div onClick={OpenMenu}><div>الاقسام</div></div>
+            <div onClick={()=>{OpenMenu("2")}}><div>الاقسام</div></div>
             <div style={{position:"relative"}} className="menu_cont">
                 <div className='header_hover'>من نحن</div>
 
-                <div className='header_menu' id='header_menu' style={{display:"none"}}>
+                <div className='header_menu' id='header_menu2' style={{display:"none"}}>
                         <Link to={"/category"}><div>ملابس النساء</div></Link> 
                         <Link to={"/category"}><div>ملابس الرجال</div></Link>
                         <Link to={"/category"}><div>ملابس الاطفال</div></Link>
@@ -170,14 +170,14 @@ function Header() {
             <div style={{position:"relative"}} className="menu_cont">
                 <div className='header_hover'>من نحن</div>
 
-            <div className='header_menu' id='header_menu' style={{display:"none"}}>
+            <div className='header_menu' id='header_menu1' style={{display:"none"}}>
                     <Link to={"/category"}><div>ملابس النساء</div></Link> 
                     <Link to={"/category"}><div>ملابس الرجال</div></Link>
                     <Link to={"/category"}><div>ملابس الاطفال</div></Link>
                     <Link to={"/category"}><div>ملابس محلات</div></Link>
                 </div>
             </div>
-            <div onClick={OpenMenu}>
+            <div onClick={()=>{OpenMenu("1")}}>
 
                 <div>الاقسام</div>
 

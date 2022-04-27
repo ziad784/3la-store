@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from '../../components/Header/Header'
 import './AddItem.css'
+import add_img from '../../../imgs/add.png';
 
 function AddItem() {
   return (
@@ -98,7 +99,7 @@ function AddItem() {
                 </div>
 
                 <div style={{flex:1,height:"fit-content",display:"flex",justifyContent:"center",alignItems:"center"}}>
-                    <img  style={{border:"1px solid #707070",padding:"5%",borderRadius:"15px"}} src="../imgs/add.png" alt="" />
+                    <img  style={{border:"1px solid #707070",padding:"5%",borderRadius:"15px"}} src={add_img} alt="" />
                 </div>
 
             </div>

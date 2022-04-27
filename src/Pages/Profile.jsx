@@ -2,6 +2,9 @@ import React from 'react'
 import Footer from '../components/Footer/Footer'
 import Header from '../components/Header/Header'
 import ItemList from '../components/ItemList/ItemList'
+import profile_img from '../../imgs/profile.png';
+import item_img from '../../imgs/itemPic.png'
+import done_img from '../../imgs/done.png'
 
 function Profile() {
 
@@ -17,7 +20,7 @@ function Profile() {
 
             <div className="flex profile_inputs_cont" style={{marginTop:"20px"}}>
                 <div className="flex profile_inputs_cont" style={{gap:"50px",flex:1}}>
-                    <div><img src="../imgs/profile.png" width={250} height={250} style={{borderRadius:"15px"}} /></div>
+                    <div><img src={profile_img} width={250} height={250} style={{borderRadius:"15px"}} /></div>
                     <div style={{display:"flex",flexDirection:"column",justifyContent:"space-around",flex:.3}}>
                         <div style={{fontSize:"20px",color:"#FFA84D"}}>حلزوم ابراهيم</div>
                         <div className='input'>
@@ -46,15 +49,15 @@ function Profile() {
                 <div className="flex profile_inputs_cont" style={{marginTop:"3vh",justifyContent:"space-between",gap:"30px",width:"100%"}}>
 
                     <div className="right" style={{backgroundColor:"#F2F1F1",flex:1,borderRadius:"15px",padding:"5%",height:"70vh",overflowY:"auto"}}>
-                        <ItemList title={"اسم المنتج"} isdeleted={false} category={"ملابس النساء - تيشيرت"} pic={"../imgs/itemPic.png"} price={"10"} />
-                        <ItemList title={"اسم المنتج"} isdeleted={false} category={"ملابس النساء - تيشيرت"} pic={"../imgs/itemPic.png"} price={"10"} />
-                        <ItemList title={"اسم المنتج"} isdeleted={false} category={"ملابس النساء - تيشيرت"} pic={"../imgs/itemPic.png"} price={"10"} />
-                        <ItemList title={"اسم المنتج"} isdeleted={false} category={"ملابس النساء - تيشيرت"} pic={"../imgs/itemPic.png"} price={"10"} />
+                        <ItemList title={"اسم المنتج"} isdeleted={false} category={"ملابس النساء - تيشيرت"} pic={item_img} price={"10"} />
+                        <ItemList title={"اسم المنتج"} isdeleted={false} category={"ملابس النساء - تيشيرت"} pic={item_img} price={"10"} />
+                        <ItemList title={"اسم المنتج"} isdeleted={false} category={"ملابس النساء - تيشيرت"} pic={item_img} price={"10"} />
+                        <ItemList title={"اسم المنتج"} isdeleted={false} category={"ملابس النساء - تيشيرت"} pic={item_img} price={"10"} />
                     </div>
 
 
                     <div className="left" style={{display:"flex",justifyContent:"center",flexDirection:"column",alignItems:"center",gap:"10px",flex:1,backgroundColor:"#F2F1F1",borderRadius:"15px",padding:"5%"}}>
-                        <div><img src="../imgs/done.png" alt="done pic" /></div>
+                        <div><img src={done_img} alt="done pic" /></div>
                         <div>تم الطلب بنجاح</div>
                         <div>2022-03-18</div>
                         <div>سيتم التوصيل بواسطة شركة</div>

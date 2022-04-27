@@ -82,15 +82,16 @@ header{
 
 .header_menu{
     background-color: white;
-    padding: 10%;
+    padding: 6%;
     position: absolute;
     top: 150%;
     display: flex;
     flex-direction: column;
     gap: 10px;
-    width: fit-content;
+    width: 160px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     direction: rtl;
+    
     
 }
 

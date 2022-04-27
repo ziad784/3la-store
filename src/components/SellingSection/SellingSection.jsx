@@ -1,5 +1,6 @@
 import React from 'react'
 import './SellingSection.css'
+import shopping_img from '../../../imgs/shoppingPic.png'
 
 
 function SellingSection() {
@@ -9,7 +10,7 @@ function SellingSection() {
         <div style={{flex:1}}>
         <div  className="right_selling_section" >
             <div className='orange_box' style={{width:"200px",height:"200px",backgroundColor:"#FFA340",borderRadius:"15px"}}></div>
-            <img style={{position:"absolute",bottom:"0%"}} src="./imgs/shoppingPic.png" alt="shopping Pic" width={300} height={300} />
+            <img style={{position:"absolute",bottom:"0%"}} src={shopping_img} alt="shopping Pic" width={300} height={300} />
         </div>
         </div>
 
