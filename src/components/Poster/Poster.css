@@ -1,0 +1,40 @@
+.poster{
+    display: flex;
+    background-color: #FFA340;
+    
+}
+
+
+.poster_left{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.poster_right{
+    flex: 1;
+}
+
+.poster_left > div{
+    font-size: 40px;
+}
+
+
+@media only screen and (max-width: 800px) {
+
+    .poster_right > div > img{
+        width: 80%;
+        height: 80%;
+
+    }
+
+    .poster_left > div{
+        font-size: 20px;
+    }
+
+
+
+}

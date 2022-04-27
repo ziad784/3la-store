@@ -1,0 +1,17 @@
+.Items_grid{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 900px) {
+    .Items_grid{
+    
+        grid-template-columns: 50% 50%;
+        gap: 20px;
+    }
+
+
+  }
