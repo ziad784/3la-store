@@ -1,0 +1,51 @@
+.cards{
+    justify-content: space-around;
+    margin-top: 5vh;
+}
+
+
+
+.cards::-webkit-scrollbar {
+    display: none;
+  }
+  
+
+  .cards {
+    -ms-overflow-style: none; 
+    scrollbar-width: none;    
+  }
+
+
+@media only screen and (max-width: 700px) {
+
+    .cards{
+        justify-content: initial;
+        margin-right: 0px;
+    }
+    
+
+
+
+}
+
+
+
+
+@media only screen and (min-width: 701px) and  (max-width: 1000px){
+
+  .cards{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0px;
+}
+
+
+}
+
+
+@media only screen and (min-width: 1001px) and  (max-width: 1200px){
+  .cards{
+    margin-right: 0px;
+  }
+}
